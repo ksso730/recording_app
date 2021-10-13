@@ -42,6 +42,10 @@ const handleStart = () => {
     }
     // recording start
     recorder.start();
+    setTimeout(() => {
+        handleStop();
+        alert("You can record for 5 minute");
+      }, 5000);
 }
 
 const init = async () => {
